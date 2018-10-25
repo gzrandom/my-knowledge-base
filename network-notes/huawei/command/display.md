@@ -25,4 +25,7 @@
     Time Zone(China-Standard-Time) : UTC-08:00
     ```
 
+  * ### display this
+    显示当前设置，在所有视图都可使用
+
     

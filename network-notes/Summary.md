@@ -11,3 +11,6 @@
       * ##### [sysname](huawei/command/sysname.md) -- 修改设备名称
       * ##### [header](huawei/command/header.md) -- 配置登录标语信息
     * #### 接口视图
+  * ### 实现功能
+    * #### [配置Console口登录认证方式及超时时间](huawei/function/console-authentication-mode.md)
+    * #### [接口IP配置](huawei/function/interface-ip-setup.md)
