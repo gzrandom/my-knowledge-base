@@ -9,6 +9,10 @@
       * ##### [clock](huawei/command/clock.md) -- 修改时间
       * ##### [system-view](huawei/command/system-view.md) -- 进入系统视图
       * ##### [dir](huawei/command/dir.md) -- 查看设备的文件列表
+      * ##### [save](huawei/command/save.md) -- 保存当前配置文件
+      * ##### [startup](huawei/command/startup.md) -- 配置下次启动所使用的文件
+      * ##### [reset](huawei/command/reset.md) -- 清除存储的配置文件
+      * ##### [reboot](huawei/command/reboot.md) -- 重启路由
     * #### 系统视图
       * ##### [sysname](huawei/command/sysname.md) -- 修改设备名称
       * ##### [header](huawei/command/header.md) -- 配置登录标语信息
@@ -18,4 +22,4 @@
     * #### [配置Console口登录认证方式及超时时间](huawei/function/console-authentication-mode.md)
     * #### [Telnet配置](huawei/function/telnet-setup.md)
     * #### [接口IP配置](huawei/function/interface-ip-setup.md)
-    * #### [FTP在路由间上传下载](huawei/function/ftp.md)
+    * #### [FTP在路由间上传下载](huawei/function/ftp.md)（**未测试成功**）

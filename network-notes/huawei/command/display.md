@@ -28,4 +28,11 @@
   * ### display this
     显示当前设置，在所有视图都可使用
 
-    
+  * ### display current-configuration
+    显示当前生效配置信息
+  
+  * ### display saved-configuration
+    显示已保存的配置信息
+
+  * ### display startup
+    显示下次使用的配置文件
