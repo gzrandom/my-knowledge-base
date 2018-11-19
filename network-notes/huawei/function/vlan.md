@@ -1,7 +1,7 @@
 # VLAN 虚拟局域网
-1. vlan基本配置
 
-   1.1. 命令行列表
+
+## 1. 命令行列表
    
    操作|命令
    ---|---
@@ -17,12 +17,12 @@
    配置静态路由|ip route-static <ip_address> [\<mesk\> \| \<masklen\>] \<interface_name\> \| \<gateway_address\> [preference <preference_value>] [reject \|backhole]
    显示路由信息|display ip routing-table
 
+## 2 vlan基本配置
 
-
-   1.2. 组网及业务描述
+   1.1. 组网及业务描述
       ![vlan](../pics/vlan-001.jpg "vlan基本设置001")
       在同一交换机内同一vlan的PC可以互通，不同vlan的PC不可互通。
 
 
-## 2. Trunk基本配置
-## 3. vlan间的三层互通
+## 3. Trunk基本配置
+## 4. vlan间的三层互通
