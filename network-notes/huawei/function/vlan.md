@@ -17,15 +17,15 @@
    配置静态路由|ip route-static <ip_address> [\<mesk\> \| \<masklen\>] \<interface_name\> \| \<gateway_address\> [preference <preference_value>] [reject \|backhole]
    显示路由信息|display ip routing-table
 
-## 2 vlan基本配置
+## 2. vlan基本配置
 
-   1.1. 组网及业务描述
+   ### 1.1. 组网及业务描述
 
    ![vlan](../pics/vlan-001.jpg "vlan基本设置001")
    
    在同一交换机内同一vlan的PC可以互通，不同vlan的PC不可互通。
 
-   1.2. 配置说明
+   ### 1.2. 配置说明
 
 Device|IP|Subnet Mask|Gateway
 :-:|:-:|:-:|:-:
@@ -36,7 +36,7 @@ PCD|192.168.3.2|255.255.255.0|192.168.3.254
 VLAN2|192.168.2.254|255.255.255.0|
 VLAN3|192.168.3.254|255.255.255.0|
 
-   1.3. 实例代码
+   ### 1.3. 实例代码
 
 ```
 <Huawei>system-view 

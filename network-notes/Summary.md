@@ -23,3 +23,4 @@
     * #### [Telnet配置](huawei/function/telnet-setup.md)
     * #### [接口IP配置](huawei/function/interface-ip-setup.md)
     * #### [FTP在路由间上传下载](huawei/function/ftp.md)（**未测试成功**）
+    * #### [VLAN](huawei/function/vlan.md)
