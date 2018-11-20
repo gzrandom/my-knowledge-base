@@ -20,7 +20,9 @@
 ## 2 vlan基本配置
 
    1.1. 组网及业务描述
+
       ![vlan](../pics/vlan-001.jpg "vlan基本设置001")
+      
       在同一交换机内同一vlan的PC可以互通，不同vlan的PC不可互通。
 
 
