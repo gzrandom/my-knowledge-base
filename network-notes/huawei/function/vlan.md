@@ -19,13 +19,13 @@
 
 ## 2. vlan基本配置
 
-   ### 1.1. 组网及业务描述
+   ### 2.1. 组网及业务描述
 
    ![vlan](../pics/vlan-001.jpg "vlan基本设置001")
    
    在同一交换机内同一vlan的PC可以互通，不同vlan的PC不可互通。
 
-   ### 1.2. 配置说明
+   ### 2.2. 配置说明
 
 Device|IP|Subnet Mask|Gateway
 :-:|:-:|:-:|:-:
@@ -36,7 +36,7 @@ PCD|192.168.3.2|255.255.255.0|192.168.3.254
 VLAN2|192.168.2.254|255.255.255.0|
 VLAN3|192.168.3.254|255.255.255.0|
 
-   ### 1.3. 实例代码
+   ### 2.3. 实例代码
 
 ```
 <Huawei>system-view 
@@ -93,8 +93,8 @@ VID  Status  Property      MAC-LRN Statistics Description
 [Huawei]
 ```
 
-
-
-
 ## 3. Trunk基本配置
+
+   ### 3.1. 组网及业务描述
+![vlan](../pics/vlan-002.jpg "Trunk基本配置002")
 ## 4. vlan间的三层互通
