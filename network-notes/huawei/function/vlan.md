@@ -97,4 +97,86 @@ VID  Status  Property      MAC-LRN Statistics Description
 
    ### 3.1. 组网及业务描述
 ![vlan](../pics/vlan-002.jpg "Trunk基本配置002")
+
+   ### 3.2. 配置说明
+
+   Devices|IP|Subnet Mask|VLAN|连接接口
+   :-:|:-:|:-:|:-:|:-:
+   PC1|10.1.1.2|24|VLAN2|S1 e0/0/1
+   PC2|10.1.2.2|24|VLAN3|S1 e0/0/9
+   PC3|10.1.1.3|24|VLAN2|S2 e0/0/1
+   PC4|10.1.2.3|24|VLAN3|S2 e0/0/9
+   S1||||S1 e0/0/17 <-> S2 e0/0/17
+   S2||||S2 e0/0/17 <-> S1 e0/0/17
+
+   ### 3.3. 效果
+   
+   同一VLAN内部的PC可以互相访问，PC1与PC3可以互相ping通。
+
+   不同VLAN间的PC不能互相访问，PC1与PC2不能互相ping通。
+
+   ### 3.4. 实例代码
+
+```
+<Huawei>system-view 
+Enter system view, return user view with Ctrl+Z.
+[Huawei]sysname s1
+[s1]
+[s1]vlan 2
+[s1-vlan2]vlan 3
+[s1-vlan3]quit
+[s1]port-group group-member Ethernet 0/0/1 to Ethernet 0/0/8
+[s1-port-group]port link-type access 
+[s1-Ethernet0/0/1]port link-type access 
+[s1-Ethernet0/0/2]port link-type access 
+[s1-Ethernet0/0/3]port link-type access 
+[s1-Ethernet0/0/4]port link-type access 
+[s1-Ethernet0/0/5]port link-type access 
+[s1-Ethernet0/0/6]port link-type access 
+[s1-Ethernet0/0/7]port link-type access 
+[s1-Ethernet0/0/8]port link-type access 
+[s1-port-group]quit
+[s1]
+[s1]port-group group-member Ethernet 0/0/1 to Ethernet 0/0/8
+[s1-port-group]port default vlan 2
+[s1-Ethernet0/0/1]port default vlan 2
+[s1-Ethernet0/0/2]port default vlan 2
+[s1-Ethernet0/0/3]port default vlan 2
+[s1-Ethernet0/0/4]port default vlan 2
+[s1-Ethernet0/0/5]port default vlan 2
+[s1-Ethernet0/0/6]port default vlan 2
+[s1-Ethernet0/0/7]port default vlan 2
+[s1-Ethernet0/0/8]port default vlan 2
+[s1-port-group]quit
+[s1]
+[s1]port-group group-member Ethernet 0/0/9 to Ethernet 0/0/16
+[s1-port-group]port link-type access
+[s1-Ethernet0/0/9]port link-type access
+[s1-Ethernet0/0/10]port link-type access
+[s1-Ethernet0/0/11]port link-type access
+[s1-Ethernet0/0/12]port link-type access
+[s1-Ethernet0/0/13]port link-type access
+[s1-Ethernet0/0/14]port link-type access
+[s1-Ethernet0/0/15]port link-type access
+[s1-Ethernet0/0/16]port link-type access
+[s1-port-group]quit
+[s1]vlan 3
+[s1-vlan3]port Ethernet 0/0/9 to 0/0/16
+[s1-vlan3]quit
+[s1]interface Ethernet 0/0/17
+[s1-Ethernet0/0/17]port link-type trunk 
+[s1-Ethernet0/0/17]port trunk allow-pass vlan all
+[s1-Ethernet0/0/17]
+[s1-Ethernet0/0/17]return 
+<s1>save 
+The current configuration will be written to the device.
+Are you sure to continue?[Y/N]y
+Info: Please input the file name ( *.cfg, *.zip ) [vrpcfg.zip]:
+Nov 29 2018 13:44:06-08:00 s2 %%01CFM/4/SAVE(l)[0]:The user chose Y when decidin
+g whether to save the configuration to the device.
+Now saving the current configuration to the slot 0.
+Save the configuration successfully.
+<s1>
+```
+
 ## 4. vlan间的三层互通
