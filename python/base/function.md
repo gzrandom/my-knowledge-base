@@ -54,7 +54,7 @@ my_abs(-9)
 
 
 ```python
-my_abs(1, 2)
+my_abs(1, 2)   //如果参数个数不对，会抛出TypeError
 ```
 
 
@@ -112,6 +112,27 @@ abs('a')
 
 
 
-```python
+## 返回多个值
 
+函数可以返回多个值
+
+```python
+import math
+
+def move(x, y, step, angle = 0)
+    nx = z + step * math.cos(angle)
+    ny = y - step * math.sin(angle)
+    return nx, ny
+
+x, y = move(100, 100, 60, math.pi / 6)
+print(x, y)
+
+151.96152422706632 70.0
+
+x = move(100, 100, 60, math.pi / 6)
+print(x)
+
+(151.96152422706632, 70.0)
 ```
+
+其实这只是假象，python函数返回的仍然的单一值（tuple）。但在语法上，返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple，按位置赋给对应的值
