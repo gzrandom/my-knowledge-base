@@ -12,3 +12,5 @@
 * [集合:dict与set](base/dict_set.md)
 * [函数](base/function.md)
 * [函数的参数](base/function_parameter.md)
+* [递归函数](base/function_recursive.md)
+* [切片](base/slice.md)
