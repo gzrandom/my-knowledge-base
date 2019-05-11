@@ -14,3 +14,5 @@
 * [函数的参数](base/function_parameter.md)
 * [递归函数](base/function_recursive.md)
 * [切片](base/slice.md)
+* [迭代](base/iteration.md)
+* [列表生成式](base/list_comprehensions.md)
