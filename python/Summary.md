@@ -18,3 +18,6 @@
 * [列表生成式](base/list_comprehensions.md)
 * [生成器](base/generator.md)
 * [迭代器](base/iterator.md)
+* 函数式编程
+    * [高阶函数](base/higher_order_function.md)
+    * [map/reduce](base/map_reduce.md)
