@@ -21,3 +21,4 @@
 * 函数式编程
     * [高阶函数](base/higher_order_function.md)
     * [map/reduce](base/map_reduce.md)
+    * [filter](base/filter.md)
