@@ -24,6 +24,9 @@
         * [filter](base/filter.md)
         * [sorted](base/sorted.md)
 * [argv参数](base/argv.md)
+<<<<<<< HEAD
 * 文件
     * [读取文件](base/read_file.md)
     * [读写文件](base/readwrite_file.md)
+=======
+>>>>>>> 8b5d182a7eecc74209bd1a7bf390e7379846705e
