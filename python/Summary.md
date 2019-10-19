@@ -2,6 +2,7 @@
 
 ## Pythoon 基础
 
+* [注释](base/annotation.md)
 * [命令行模式与交互模式](base/command_and_interactive.md)
 * [输入输出](base/input_output.md)
 * [数据类型](base/data_type.md)
