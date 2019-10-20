@@ -12,6 +12,12 @@
 多行
 注释
 ”“”
+'''
+单引号
+同样可以
+多行
+注释
+'''
 print("Hello world!")
 # print("Good bye world") 这是单行注释
 print("See you!")

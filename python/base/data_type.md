@@ -1,6 +1,8 @@
 
 # 数据类型
 
+## 1. 数据类型
+
 * 整数
 
 正、负整数：0, 100, -1000 等等
@@ -180,3 +182,39 @@ not True
 * 空值
 
 空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。
+
+## 2. type()函数
+
+使用type()函数对变量类型进行检查
+
+```python
+a = 100
+b = 12.345
+c = 1 + 5j
+d = 'hello, world'
+e = True
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+```
+
+输出：
+```python
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+<class 'str'>
+<class 'bool'>
+```
+
+## 3. 类型转换
+
+
+- int()：将一个数值或字符串转换成整数，可以指定进制。
+- float()：将一个字符串转换成浮点数。
+- str()：将指定的对象转换成字符串形式，可以指定编码。
+- chr()：将整数转换成该编码对应的字符串（一个字符）。
+- ord()：将字符串（一个字符）转换成对应的编码（整数）。
+
