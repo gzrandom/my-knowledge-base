@@ -62,6 +62,10 @@ print(classmate[-4])    #下标越界
 
 `pop(i)`：删除指定元素，`i`为索引号
 
+`remove(item)`：删除地一个与`item`相同的元素
+
+`clear()`：清空列表
+
 替换某元素：直接对该元素赋值
 
 
@@ -76,6 +80,10 @@ classmate.pop(2)
 print(classmate)
 classmate[1] = 'chener'
 print(classmate)
+classmate.remove('张三')
+print(classmate)
+classmate.clear()
+print(classmate)
 ```
 
     ['张三', '李四', '王五', '马六']
@@ -83,6 +91,8 @@ print(classmate)
     ['张三', '陈二', '李四', '王五']
     ['张三', '陈二', '王五']
     ['张三', 'chener', '王五']
+    ['chener', '王五']
+    []
 
 
 `list`里各元素数据类型可以不同
